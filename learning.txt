@@ -11,6 +11,7 @@ source ~/.bashrc
 We can also create alias in git configuration
 let's create an alias for git add . git commit -m "message" git push 
 git config --global alias.acp '!f() { git add . && git commit -m "$1" && git push; }; f'
+The f at the end of the alias command is used to call the function you defined.
 now you can use this alias with git like git acp "hello world"
 to view the list of your git configuration you can type:
 git config --list
