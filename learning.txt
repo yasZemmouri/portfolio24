@@ -1,0 +1,16 @@
+In WSL to lunch live-server and open the port in the browser at the same time
+live-server --browser="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
+to create an alias with the path to a specific browser
+with a texts editor nano, vim, ... Open your .bashrc or .zshrc file in ~/  (nano in our case)
+at the end of the document add a line
+#My alias
+alias live-chrome='live-server --browser="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" &'
+ctrl+o to save then Enter then ctrl+x to exit
+Load the new alias in the terminal session
+source ~/.bashrc
+We can also create alias in git configuration
+let's create an alias for git add . git commit -m "message" git push 
+git config --global alias.acp '!f() { git add . && git commit -m "$1" && git push; }; f'
+now you can use this alias with git like git acp "hello world"
+to view the list of your git configuration you can type:
+git config --list
