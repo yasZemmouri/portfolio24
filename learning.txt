@@ -1,3 +1,4 @@
+#Live-server lunch browser
 In WSL to lunch live-server and open the port in the browser at the same time
 live-server --browser="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 to create an alias with the path to a specific browser
