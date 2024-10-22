@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    --background-color: #F0F2F5;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6em;
+    line-height: 1.7em;
+    background-color: var(--background-color);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+}
+.banner{
+    width: 100vw;
+    background-color: green;
+    background-image: url('river.jpg');   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+.profile-pic{
+    width: 150px; /* To ensure it's a perfect circle */
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid var(--background-color); /* Adds a white border */
+    overflow: hidden;
+    margin-top: -75px;
+}
+.profile-pic img{
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales properly */
+
+}
