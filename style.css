@@ -70,3 +70,10 @@ h1, h2, h3{
 .post a:hover{
     color: #0056b3; 
 }
+.colored-user{
+        color: #C0C0C0;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.connections-color{
+   color: #118DF0;
+}
